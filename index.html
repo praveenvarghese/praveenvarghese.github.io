@@ -12,44 +12,96 @@
         header p { font-size: 1.2em; color: #7f8c8d; }
         section { margin-bottom: 40px; }
         h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px; }
-        .project { background: #f8f9fa; padding: 20px; margin-bottom: 20px; border-left: 4px solid #3498db; border-radius: 5px; }
-        .project h3 { color: #2c3e50; margin-bottom: 10px; }
-        .project ul { margin: 15px 0; padding-left: 20px; }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        h3 { color: #2c3e50; margin-bottom: 15px; }
+        h4 { color: #34495e; margin-bottom: 10px; }
+        .experience { background: #f8f9fa; padding: 25px; margin-bottom: 25px; border-left: 4px solid #3498db; border-radius: 5px; }
+        .experience .company { font-size: 1.1em; font-weight: bold; color: #2c3e50; }
+        .experience .period { color: #7f8c8d; font-style: italic; margin-bottom: 15px; }
+        .ai-section { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 15px 0; border-radius: 5px; }
+        .ai-section h4 { color: #e67e22; }
+        .core-section { margin: 15px 0; }
+        .core-section h4 { color: #27ae60; }
+        ul { margin: 10px 0; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         .skills-grid div { background: #f8f9fa; padding: 15px; border-radius: 5px; }
         .skills-grid h4 { color: #2c3e50; margin-bottom: 8px; }
         a { color: #3498db; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .professional-skills { background: #e8f5e8; padding: 15px; border-radius: 5px; margin: 15px 0; }
     </style>
 </head>
 <body>
     <header>
         <h1>Praveen Varghese</h1>
-        <p>Senior Test Automation Engineer & AI Innovation Leader</p>
+        <p>Scrum Master & Senior Test Automation Engineer</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Senior Test Automation Engineer specializing in AI-powered testing solutions with expertise in Playwright, multi-agent systems, and intelligent test generation. Currently leading innovation at AIMMS with focus on autonomous testing workflows.</p>
+        <p>As a Senior Test Automation Engineer and Scrum Master, I specialize in driving quality assurance through advanced automation tools like Playwright, Cypress and Selenium, with recent focus on AI-powered testing solutions. My role integrates strategic leadership in Agile practices with hands-on expertise in designing intelligent test frameworks that reduce manual effort and improve efficiency.</p>
     </section>
 
-    <section id="projects">
-        <h2>Key Projects</h2>
+    <section id="experience">
+        <h2>Professional Experience</h2>
         
-        <div class="project">
-            <h3>AI-Powered Test Generation System</h3>
-            <p>Architected end-to-end AI system that automatically creates Playwright tests from requirements, reducing manual effort by 70%.</p>
+        <div class="experience">
+            <div class="company">Devon Software Services | AIMMS</div>
+            <div class="period">2017 – Present</div>
+            
+            <h3>Senior Test Automation Engineer</h3>
+            
+            <div class="ai-section">
+                <h4>🤖 AI-Powered Testing Innovation:</h4>
+                <ul>
+                    <li><strong>Architected AI-powered test generation system</strong> that automatically creates Playwright tests from requirements, reducing manual test creation effort by 70%</li>
+                    <li><strong>Built multi-agent orchestration</strong> using Azure OpenAI for autonomous test case generation and Page Object Model creation</li>
+                    <li><strong>Implemented RAG with vector databases</strong> (Azure Cognitive Search) for intelligent test case retrieval and similarity matching</li>
+                    <li><strong>Integrated browser automation with AI</strong> for real-time UI element detection and intelligent selector generation</li>
+                </ul>
+            </div>
+
+            <div class="core-section">
+                <h4>🔧 Core Test Automation & Leadership:</h4>
+                <ul>
+                    <li>Migration of existing WebdriverIO test automation framework to Playwright</li>
+                    <li>Built custom reports for Playwright and implemented Page Object Model</li>
+                    <li>Built JavaScript-based test framework using WebDriverIO, Mocha, and Chai</li>
+                    <li>Implemented page object model in JavaScript Node.js</li>
+                    <li>Used JavaScript libraries like Chai along with Selenium WebDriver IO for UI test execution assertions</li>
+                    <li>Coordinated with clients, prepared test cases, and ensured software application compatibility</li>
+                    <li>Implemented Shift Left Testing methodology, resulting in 30% reduction in defects in production and 20% improvement in code quality</li>
+                </ul>
+            </div>
+
+            <h3>Scrum Master</h3>
             <ul>
-                <li>Multi-agent orchestration using Azure OpenAI</li>
-                <li>RAG implementation with vector databases (Azure Cognitive Search)</li>
-                <li>Intelligent browser automation with real-time UI element detection</li>
-                <li>Autonomous Page Object Model generation</li>
+                <li>Leading a distributed scrum team of 10 members</li>
+                <li>Facilitated Scrum events, including daily stand-up meetings, sprint planning, sprint reviews and retrospectives</li>
+                <li>Guided the development team towards self-managing and cross-functionality</li>
+                <li>Trained and coached the team on Agile/Scrum principles and practices</li>
+                <li>Collaborated with stakeholders along with product owner, to ensure right value is catered to customers</li>
+                <li>Ensured effective communication between team members, including facilitating team discussions and resolving conflicts</li>
+                <li>Encouraged experimentation and feedback loops to drive continuous improvement</li>
             </ul>
         </div>
 
-        <div class="project">
-            <h3>WebdriverIO to Playwright Migration</h3>
-            <p>Led complete framework migration with enhanced reporting and Page Object Model implementation for enterprise-scale testing.</p>
+        <div class="experience">
+            <div class="company">Infosys Limited | Apple</div>
+            <div class="period">2013 – 2017</div>
+            
+            <h3>Test Analyst</h3>
+            <ul>
+                <li>Implemented Mobile and Web automation using Appium, Selenium, JAVA</li>
+                <li>Built excellent framework to handle both Mobile and Web Automation</li>
+                <li>Running scripts using Jenkins (Continuous integration tool)</li>
+                <li>Added additional functions to the framework</li>
+                <li>Managed testing tools and performed tests on automated scripts</li>
+                <li>Coordinated with product management and software support engineers to deliver stable enterprise software products</li>
+                <li>Involved in product design to guarantee adherence of test coverage for meeting end-user requirements</li>
+                <li>Recorded test results, reported and verified software bug fixes to accept automation criteria</li>
+                <li>Prepared software defect tracking and reported entire project release status to stakeholders</li>
+            </ul>
         </div>
     </section>
 
@@ -57,8 +109,8 @@
         <h2>Technical Skills</h2>
         <div class="skills-grid">
             <div>
-                <h4>Test Automation</h4>
-                <p>Playwright, WebdriverIO, Selenium, Cypress, Appium</p>
+                <h4>Test Automation Tools</h4>
+                <p>Playwright, WebdriverIO, Selenium, Cypress, Appium, Jmeter</p>
             </div>
             <div>
                 <h4>AI Integration</h4>
@@ -69,9 +121,41 @@
                 <p>JavaScript, Java, Python</p>
             </div>
             <div>
-                <h4>Leadership</h4>
-                <p>Scrum Master, Agile Methodologies, Team Innovation</p>
+                <h4>CI/CD Tools</h4>
+                <p>Jenkins, GitLab</p>
             </div>
+            <div>
+                <h4>Version Control</h4>
+                <p>Git, SVN</p>
+            </div>
+            <div>
+                <h4>Test Management</h4>
+                <p>RADAR, GITLAB, MTM, VSTS</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="professional-skills">
+        <h2>Professional Skills</h2>
+        <div class="professional-skills">
+            <ul>
+                <li><strong>Leadership:</strong> Experience leading testing teams and serving as Scrum Master</li>
+                <li><strong>Communication:</strong> Effective in collaborating with cross-functional teams</li>
+                <li><strong>Problem-Solving:</strong> Skilled in identifying and resolving testing bottlenecks</li>
+                <li><strong>Adaptability:</strong> Quickly adapting to new technologies and methodologies</li>
+                <li><strong>Innovation:</strong> Implementing AI solutions to improve testing efficiency</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <div class="experience">
+            <h4>Education</h4>
+            <p><strong>Bachelor of Engineering</strong> - Visvesvaraya Technical University (Completed 2012)</p>
+            
+            <h4>Certifications</h4>
+            <p><strong>Professional Scrum Master (PSM-I)</strong> - Certified</p>
         </div>
     </section>
 
@@ -80,7 +164,10 @@
         <p>📧 praveenvarghese.22@gmail.com</p>
         <p>📍 Krakow, Poland</p>
         <p>📱 +48 573341550</p>
-        <p><a href="https://github.com/praveenvarghese">GitHub</a> | <a href="https://linkedin.com/in/your-profile">LinkedIn</a></p>
+        <p>
+            <a href="https://github.com/praveenvarghese">GitHub</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
     </section>
 </body>
 </html>
