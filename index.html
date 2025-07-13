@@ -1,285 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Senior Test Automation Engineer and Scrum Master skilled in Playwright, AI-powered testing, and Agile leadership.">
-    <meta name="author" content="Praveen Varghese">
-    <title>Praveen Varghese - Senior Test Automation Engineer</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lead Test Automation Engineer and Scrum Master skilled in Playwright, AI-powered testing, and Agile leadership."
+    />
+    <meta name="author" content="Praveen Varghese" />
+    <title>Praveen Varghese - Lead Test Automation Engineer</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: #fff;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: #fff;
+      }
+      header {
+        text-align: center;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #0077b6;
+        margin-bottom: 40px;
+      }
+      header h1 {
+        font-size: 2.6em;
+        color: #0077b6;
+        font-weight: 700;
+      }
+      header p {
+        font-size: 1.2em;
+        color: #444;
+        font-weight: 500;
+      }
+      section {
+        margin-bottom: 50px;
+      }
+      h2 {
+        color: #0077b6;
+        font-size: 1.6em;
+        margin-bottom: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-left: 5px solid #0077b6;
+        padding-left: 10px;
+        background-color: #f0f8ff;
+        display: inline-block;
+      }
+      h3 {
+        color: #004e89;
+        margin-bottom: 15px;
+        font-size: 1.3em;
+        font-weight: 600;
+      }
+      h4 {
+        color: #444;
+        margin-bottom: 12px;
+        font-size: 1.1em;
+      }
+      .experience {
+        margin-bottom: 35px;
+        padding: 25px;
+        background-color: #f9f9f9;
+        border-left: 4px solid #0077b6;
+        border-radius: 5px;
+      }
+      .company {
+        font-size: 1.15em;
+        font-weight: 700;
+        color: #2c3e50;
+      }
+      .period {
+        color: #666;
+        font-size: 0.95em;
+        margin-bottom: 15px;
+      }
+      ul {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+        color: #444;
+      }
+      li strong {
+        color: #0077b6;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .skills-item h4 {
+        color: #0077b6;
+        margin-bottom: 8px;
+        font-size: 1.05em;
+      }
+      .skills-item p {
+        color: #333;
+        line-height: 1.5;
+      }
+      .professional-skills ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        background: #eef6fb;
+        border-radius: 5px;
+        padding: 15px;
+      }
+      .professional-skills li {
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+      }
+      .contact-info {
+        text-align: center;
+      }
+      .contact-info p {
+        margin: 8px 0;
+        color: #444;
+      }
+      a {
+        color: #0077b6;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .tech-highlight {
+        background: #e8f5e8;
+        padding: 3px 6px;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+      .print-button {
+        background: #0077b6;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 20px 0;
+        font-size: 1em;
+        transition: background 0.3s ease;
+      }
+      .print-button:hover {
+        background: #005a87;
+      }
+
+      /* SMART 2-PAGE PDF LAYOUT - FILLS PAGE 1 PROPERLY */
+      @media print {
+        @page {
+          size: 8.5in 11in;
+          margin: 0.6in;
+          /* Remove browser headers and footers */
+          margin-top: 0.6in;
+          margin-bottom: 0.6in;
+          @top-left {
+            content: "";
+          }
+          @top-center {
+            content: "";
+          }
+          @top-right {
+            content: "";
+          }
+          @bottom-left {
+            content: "";
+          }
+          @bottom-center {
+            content: "";
+          }
+          @bottom-right {
+            content: "";
+          }
         }
+
+        body {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+          font-size: 10pt !important;
+          line-height: 1.3 !important;
+          font-family: "Times New Roman", serif !important;
+          color: #000 !important;
+        }
+
+        .print-button {
+          display: none !important;
+        }
+
+        /* Hide any print instructions during printing */
+        .print-instructions {
+          display: none !important;
+        }
+
         header {
-            text-align: center;
-            padding-bottom: 40px;
-            border-bottom: 2px solid #0077b6;
-            margin-bottom: 40px;
+          border-bottom: 2px solid #000;
+          margin-bottom: 12pt;
+          padding-bottom: 8pt;
         }
         header h1 {
-            font-size: 2.6em;
-            color: #0077b6;
-            font-weight: 700;
+          font-size: 18pt !important;
+          margin-bottom: 3pt;
+          font-weight: bold;
+          color: #000 !important;
         }
         header p {
-            font-size: 1.2em;
-            color: #444;
-            font-weight: 500;
+          font-size: 11pt !important;
+          margin: 2pt 0;
+          color: #000 !important;
         }
+
         section {
-            margin-bottom: 50px;
+          margin-bottom: 12pt;
         }
+
+        /* No automatic page breaks - let it flow naturally until Devon experience ends */
+        #experience .experience:first-child {
+          page-break-after: always;
+        }
+
         h2 {
-            color: #0077b6;
-            font-size: 1.6em;
-            margin-bottom: 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            border-left: 5px solid #0077b6;
-            padding-left: 10px;
-            background-color: #f0f8ff;
-            display: inline-block;
+          color: #000 !important;
+          background: none !important;
+          border-left: 3px solid #000;
+          font-size: 13pt !important;
+          margin-bottom: 8pt;
+          margin-top: 12pt;
+          padding-left: 6pt;
+          font-weight: bold;
+          text-transform: uppercase;
+          display: block !important;
         }
+
         h3 {
-            color: #004e89;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-            font-weight: 600;
+          color: #000 !important;
+          font-size: 12pt !important;
+          margin-bottom: 5pt;
+          margin-top: 8pt;
+          font-weight: bold;
         }
+
         h4 {
-            color: #444;
-            margin-bottom: 12px;
-            font-size: 1.1em;
+          color: #000 !important;
+          font-size: 10pt !important;
+          margin-bottom: 4pt;
+          font-weight: bold;
         }
+
         .experience {
-            margin-bottom: 35px;
-            padding: 25px;
-            background-color: #f9f9f9;
-            border-left: 4px solid #0077b6;
-            border-radius: 5px;
+          background: none !important;
+          border-left: 2px solid #666;
+          padding: 8pt;
+          margin-bottom: 10pt;
+          page-break-inside: avoid;
         }
+
         .company {
-            font-size: 1.15em;
-            font-weight: 700;
-            color: #2c3e50;
+          font-size: 12pt !important;
+          font-weight: bold;
+          color: #000 !important;
         }
         .period {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 15px;
+          font-size: 10pt !important;
+          margin-bottom: 5pt;
+          font-style: italic;
+          color: #000 !important;
         }
+
         ul {
-            margin: 15px 0;
-            padding-left: 20px;
+          margin: 5pt 0;
+          padding-left: 16pt;
         }
         li {
-            margin-bottom: 8px;
-            color: #444;
+          margin-bottom: 2pt;
+          font-size: 9pt !important;
+          line-height: 1.3;
+          color: #000 !important;
         }
-        li strong {
-            color: #0077b6;
-        }
+
         .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
+          background: none !important;
+          padding: 0;
+          display: block !important;
+        }
+
+        .skills-item {
+          margin-bottom: 8pt;
+          page-break-inside: avoid;
         }
         .skills-item h4 {
-            color: #0077b6;
-            margin-bottom: 8px;
-            font-size: 1.05em;
+          font-size: 11pt !important;
+          margin-bottom: 3pt;
+          color: #000 !important;
         }
         .skills-item p {
-            color: #333;
-            line-height: 1.5;
+          font-size: 9pt !important;
+          line-height: 1.3;
+          color: #000 !important;
         }
+
         .professional-skills ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            list-style: none;
-            padding: 0;
-            background: #eef6fb;
-            border-radius: 5px;
-            padding: 15px;
+          background: none !important;
+          padding: 0;
+          display: block !important;
         }
         .professional-skills li {
-            padding: 0;
-            margin: 0;
-            font-weight: 500;
+          font-size: 9pt !important;
+          margin-bottom: 3pt;
+          color: #000 !important;
         }
-        .contact-info {
-            text-align: center;
-        }
+
         .contact-info p {
-            margin: 8px 0;
-            color: #444;
+          margin: 3pt 0;
+          font-size: 10pt !important;
+          color: #000 !important;
         }
+
         a {
-            color: #0077b6;
-            text-decoration: none;
-            font-weight: 500;
+          color: #000 !important;
+          text-decoration: underline;
         }
-        a:hover {
-            text-decoration: underline;
+        .tech-highlight {
+          background: none !important;
+          font-weight: bold;
+          color: #000 !important;
         }
-        @media (max-width: 768px) {
-            body { padding: 20px 15px; }
-            header h1 { font-size: 2em; }
-            .skills-grid { grid-template-columns: 1fr; }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px 15px;
         }
+        header h1 {
+          font-size: 2em;
+        }
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
-</head>
-<body>
-<header>
-    <h1>Praveen Varghese</h1>
-    <p>Senior Test Automation Engineer & Scrum Master</p>
-</header>
+  </head>
+  <body>
+    <header>
+      <h1>Praveen Varghese</h1>
+      <p>Lead Test Automation Engineer & Scrum Master</p>
+      <p style="color: #0077b6; font-weight: 600; margin-top: 10px;">
+        QA Lead | Automation-First Quality Strategist | Playwright Expert |
+        Modernizing QA with AI
+      </p>
+    </header>
 
-<section id="summary">
-    <h2>Professional Summary</h2>
-    <p>Results-driven QA Leader with 12+ years of experience architecting intelligent automation solutions, spearheading agile QA teams, and integrating AI-powered testing frameworks. Adept at aligning quality engineering with business goals to drive efficient software delivery and continuous improvement.</p>
-</section>
+    <section id="highlights">
+      <h2>Career Highlights</h2>
+      <ul>
+        <li>
+          <strong>Lead Test Engineer</strong> driving QA transformation through
+          AI-powered automation
+        </li>
+        <li>
+          <strong>70%</strong> reduction in manual testing through AI-generated
+          <span class="tech-highlight">Playwright</span> automation
+        </li>
+        <li>
+          <strong>30%</strong> drop in production defects with Shift-Left
+          Testing
+        </li>
+        <li>
+          Architected autonomous test generation using
+          <strong>Azure OpenAI + Multi-Agent Systems</strong>
+        </li>
+        <li>
+          Built enterprise
+          <span class="tech-highlight">JavaScript</span> frameworks with
+          <span class="tech-highlight">Playwright</span> and Node.js
+        </li>
+        <li>
+          Led cross-functional Scrum team of 10 developers and testers across
+          Europe and India
+        </li>
+      </ul>
+    </section>
 
-<section id="highlights">
-    <h2>Career Highlights</h2>
-    <ul>
-        <li><strong>70%</strong> reduction in manual testing efforts through AI-generated Playwright test automation</li>
-        <li><strong>30%</strong> drop in production defects with Shift-Left Testing and early feedback loops</li>
-        <li>Architected autonomous test generation using <strong>Azure OpenAI + Multi-Agent Systems</strong></li>
-        <li>Successfully led cross-functional Scrum team of 10 across Europe and India</li>
-        <li>Designed scalable CI/CD integrated test pipelines with GitLab and Jenkins</li>
-    </ul>
-</section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        <strong>Lead Test Automation Engineer</strong> specializing in
+        <strong>Playwright</strong> and
+        <strong>JavaScript-based</strong> testing solutions with expertise in
+        AI-powered automation and intelligent test generation. Expert in
+        building scalable test architectures using modern
+        <strong>JavaScript/TypeScript</strong> frameworks. As both a hands-on QA
+        leader and certified Scrum Master, I drive quality engineering
+        transformation across distributed Agile teams.
+      </p>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I specialize in building next-generation test automation systems that fuse AI with frameworks like Playwright and Selenium. As both a hands-on QA expert and certified Scrum Master, I enable faster, smarter, and more reliable product delivery across distributed Agile teams.</p>
-</section>
+    <section id="experience">
+      <h2>Professional Experience</h2>
 
-<section id="experience">
-    <h2>Professional Experience</h2>
-
-    <div class="experience">
+      <div class="experience">
         <div class="company">Devon Software Services | AIMMS</div>
         <div class="period">2017 – Present</div>
+        <p style="font-style: italic; color: #666; margin-bottom: 15px;">
+          AIMMS provides optimization and analytics software for supply chain
+          and business planning
+        </p>
 
-        <h3>Senior Test Automation Engineer</h3>
+        <h3>Lead Test Automation Engineer</h3>
         <h4>AI-Powered Testing Innovation</h4>
         <ul>
-            <li>Designed and deployed an AI-driven test case generator that automatically builds Playwright tests from requirements, reducing manual effort by 70%</li>
-            <li>Engineered multi-agent systems using Azure OpenAI to autonomously generate selectors and Page Object Models</li>
-            <li>Implemented Retrieval-Augmented Generation (RAG) using Azure Cognitive Search and vector databases for test case similarity matching</li>
-            <li>Enhanced real-time UI automation with intelligent browser element detection powered by AI</li>
+          <li>
+            <strong>Led QA transformation</strong> architecting AI-driven test
+            generator that builds
+            <strong>Playwright tests in JavaScript</strong>, reducing manual
+            effort by 70%
+          </li>
+          <li>
+            <strong>Spearheaded technical architecture</strong> for multi-agent
+            systems using Azure OpenAI to generate
+            <strong>Playwright selectors</strong> and
+            <strong>JavaScript Page Object Models</strong>
+          </li>
+          <li>
+            <strong>Implemented</strong> AI-powered test search using Azure
+            Cognitive Search and vector databases
+          </li>
         </ul>
 
-        <h4>Core Test Automation & Leadership</h4>
+        <h4>Framework Leadership</h4>
         <ul>
-            <li>Led migration of legacy WebdriverIO framework to modern Playwright-based solution</li>
-            <li>Implemented Shift Left Testing methodology, achieving 30% reduction in production bugs</li>
-            <li>Built custom Playwright reporters and structured framework with Page Object Model support</li>
-            <li>Coordinated client test strategy, test planning, and manual/automated test coverage</li>
+          <li>
+            <strong>Led migration</strong> from WebdriverIO to
+            <strong>Playwright framework</strong> with
+            <strong>JavaScript/TypeScript</strong>
+          </li>
+          <li>
+            <strong>Architected enterprise</strong>
+            <strong>JavaScript test frameworks</strong> using
+            <strong>Playwright, Mocha, and Chai</strong>
+          </li>
+          <li>
+            <strong>Established best practices</strong> for
+            <strong>Page Object Model patterns</strong> in
+            <strong>Node.js</strong>
+          </li>
+          <li>
+            <strong>Implemented Shift Left Testing</strong>, achieving 30%
+            reduction in production bugs
+          </li>
         </ul>
 
         <h3>Scrum Master</h3>
         <ul>
-            <li>Managed a distributed Agile team of 10 members across Europe and India</li>
-            <li>Facilitated sprint ceremonies including planning, daily standups, reviews, and retrospectives</li>
-            <li>Mentored team members on Agile best practices, improving sprint velocity and quality delivery</li>
-            <li>Ensured cross-team alignment and stakeholder collaboration with the Product Owner</li>
+          <li>
+            <strong>Led distributed Agile team</strong> of 10 members (6
+            developers, 4 testers) across Europe and India
+          </li>
+          <li>
+            <strong>Facilitated sprint ceremonies</strong> and mentored team on
+            Agile practices and <strong>JavaScript testing</strong>
+          </li>
+          <li>
+            <strong>Drove continuous improvement</strong> resulting in improved
+            sprint velocity and productivity
+          </li>
         </ul>
-    </div>
+      </div>
 
-    <div class="experience">
+      <div class="experience">
         <div class="company">Infosys Limited | Apple</div>
         <div class="period">2013 – 2017</div>
 
         <h3>Test Analyst</h3>
         <ul>
-            <li>Developed mobile and web test automation frameworks using Selenium, Appium, and Java</li>
-            <li>Integrated automation pipelines with Jenkins for continuous integration and reporting</li>
-            <li>Delivered hybrid test architecture supporting multiple platforms and application types</li>
-            <li>Interfaced with product management and engineering teams for thorough test coverage</li>
-            <li>Managed defect lifecycle and ensured consistent delivery across software releases</li>
+          <li>
+            <strong>Developed automation frameworks</strong> using
+            <strong>Selenium with Java</strong> and <strong>Appium</strong>
+          </li>
+          <li>
+            <strong>Built hybrid architecture</strong> supporting mobile and web
+            platforms
+          </li>
+          <li>
+            <strong>Integrated pipelines</strong> with Jenkins for continuous
+            integration
+          </li>
         </ul>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
         <div class="skills-item">
-            <h4>Automation Frameworks</h4>
-            <p>Playwright, Selenium, WebdriverIO, Cypress, Appium, JMeter</p>
+          <h4>Primary Expertise</h4>
+          <p>
+            <strong
+              >QA Leadership, Playwright (Expert), JavaScript/TypeScript,
+              Node.js, Page Object Model</strong
+            >
+          </p>
         </div>
         <div class="skills-item">
-            <h4>AI & Innovation</h4>
-            <p>Azure OpenAI, Retrieval-Augmented Generation (RAG), Vector Databases, Multi-Agent Systems</p>
+          <h4>Automation Frameworks</h4>
+          <p>Playwright, WebdriverIO, Selenium, Cypress, Appium</p>
         </div>
         <div class="skills-item">
-            <h4>Programming Languages</h4>
-            <p>JavaScript, Java, Python</p>
+          <h4>AI & Innovation</h4>
+          <p>Azure OpenAI, Multi-Agent Systems, Vector Databases</p>
         </div>
         <div class="skills-item">
-            <h4>CI/CD & DevOps</h4>
-            <p>GitLab CI, Jenkins, Docker (basic), Shell scripting</p>
+          <h4>Languages</h4>
+          <p><strong>JavaScript (Expert), TypeScript, Java, Python</strong></p>
         </div>
         <div class="skills-item">
-            <h4>Version Control</h4>
-            <p>Git, SVN</p>
+          <h4>CI/CD</h4>
+          <p>GitLab CI, Jenkins, Docker, Git</p>
         </div>
         <div class="skills-item">
-            <h4>Test Management Tools</h4>
-            <p>RADAR, VSTS, GitLab, MTM</p>
+          <h4>Tools</h4>
+          <p>RADAR, VSTS, GitLab, MTM</p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="professional-skills">
-    <h2>Professional Skills</h2>
-    <div class="professional-skills">
+    <section id="professional-skills">
+      <h2>Professional Skills</h2>
+      <div class="professional-skills">
         <ul>
-            <li><strong>Leadership:</strong> Proven record of leading QA teams and Agile ceremonies</li>
-            <li><strong>Communication:</strong> Strong collaborator with cross-functional global teams</li>
-            <li><strong>Strategic Thinking:</strong> Ability to align QA goals with product roadmaps</li>
-            <li><strong>Problem Solving:</strong> Adept at resolving test environment and flakiness issues</li>
+          <li>
+            <strong>QA Leadership:</strong> Leading QA transformation and
+            technical excellence
+          </li>
+          <li>
+            <strong>Playwright Architecture:</strong> Expert in scalable test
+            suites and CI/CD integration
+          </li>
+          <li>
+            <strong>Team Management:</strong> Leading cross-functional teams and
+            Agile ceremonies
+          </li>
+          <li>
+            <strong>Innovation Leadership:</strong> Pioneering AI integration in
+            testing
+          </li>
         </ul>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="education">
-    <h2>Education & Certifications</h2>
-    <div class="role-section">
-        <h4>Education</h4>
-        <p>Bachelor of Engineering – Visvesvaraya Technological University (2012)</p>
+    <section id="education">
+      <h2>Education & Certifications</h2>
+      <p>
+        <strong>Bachelor of Engineering</strong> – Visvesvaraya Technological
+        University (2012)
+      </p>
+      <p><strong>Professional Scrum Master I (PSM I)</strong></p>
+    </section>
 
-        <h4>Certifications</h4>
-        <p>Professional Scrum Master I (PSM I)</p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-info">
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
         <p>Email: praveenvarghese.22@gmail.com</p>
         <p>Location: Krakow, Poland</p>
         <p>Phone: +48 573 341 550</p>
         <p>
-            <a href="https://github.com/praveenvarghese" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/praveen-varghese-4311a71a" target="_blank">LinkedIn</a>
+          <a href="https://github.com/praveenvarghese" target="_blank"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://www.linkedin.com/in/praveen-varghese-54518945"
+            target="_blank"
+            >LinkedIn</a
+          >
         </p>
-        <p><a href="./Praveen_Varghese_Resume.pdf" download>Download Resume (PDF)</a></p>
-    </div>
-</section>
+        <button class="print-button" onclick="generatePDF()">
+          📄 Download as PDF
+        </button>
+      </div>
+    </section>
+
+    <script>
+      function generatePDF() {
+        const button = document.querySelector(".print-button");
+        button.style.display = "none";
+
+        // Add print-specific instructions that won't print and won't affect layout
+        const printInstructions = document.createElement("div");
+        printInstructions.className = "print-instructions";
+        printInstructions.style.position = "fixed";
+        printInstructions.style.top = "10px";
+        printInstructions.style.left = "10px";
+        printInstructions.style.background = "#fff";
+        printInstructions.style.padding = "10px";
+        printInstructions.style.border = "2px solid #0077b6";
+        printInstructions.style.borderRadius = "5px";
+        printInstructions.style.zIndex = "9999";
+        printInstructions.style.fontSize = "12px";
+        printInstructions.style.pointerEvents = "none";
+        printInstructions.innerHTML = `
+            📄 <strong>Print Settings:</strong><br>
+            • Turn OFF "Headers and footers"<br>
+            • Select "More settings" if needed
+        `;
+        document.body.appendChild(printInstructions);
+
+        window.print();
+
+        setTimeout(() => {
+          button.style.display = "block";
+          if (printInstructions.parentNode) {
+            printInstructions.parentNode.removeChild(printInstructions);
+          }
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
